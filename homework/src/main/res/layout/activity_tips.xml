@@ -10,7 +10,7 @@
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="64dp">
+        android:layout_height="45dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -22,20 +22,9 @@
             android:textSize="18sp" />
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/body"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_msg"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
-            tools:listitem="@layout/im_list_item"/>
-
-    </LinearLayout>
-
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/im_list_item" />
 </LinearLayout>
